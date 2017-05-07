@@ -12,12 +12,12 @@ Feature: Efetuar venda
       And o troco sera <valor_retornado>
       And a quantidade <nova_quantidade>
 
-#    Scenario Outline: Venda com desconto
-#      But o produto tem um desconto de <valor_desconto>
-#      Then o valor do produto serah <valor_com_desconto>
-#      And o troco serah de <valor_retornado_com_desconto>
-#      And a quantidade <nova_quantidade>
-#
+    Scenario Outline: Venda com desconto
+      But o produto tem um desconto de <valor_desconto>
+      Then o valor do produto serah <valor_com_desconto>
+      And o troco serah de <valor_retornado_com_desconto>
+      And a quantidade <nova_quantidade>
+
       Examples: Values
       |preco_produto|quantidade_produto|valor_pago|valor_retornado|nova_quantidade| total|
       | 100.0|1|200.0|100.0|4| 100.0                                                    |
